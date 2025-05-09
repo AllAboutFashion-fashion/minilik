@@ -12,7 +12,6 @@
       color: #333;
     }
 
-    /* Top bar */
     .topbar {
       display: flex;
       justify-content: space-between;
@@ -56,7 +55,6 @@
       border-bottom: 2px solid #ff69b4;
     }
 
-    /* Category Bar */
     .category-bar {
       background-color: #f8f8f8;
       display: flex;
@@ -80,12 +78,23 @@
       color: #fff;
     }
 
-    /* Content */
     .content {
       max-width: 1000px;
       margin: 2rem auto;
       padding: 1rem;
       text-align: center;
+    }
+
+    .content img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin-top: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .content img:hover {
+      transform: scale(1.03);
     }
 
     footer {
@@ -126,6 +135,11 @@
   <div class="content">
     <h2>Welcome to your ultimate fashion destination!</h2>
     <p>Find all the latest trends in clothing, shoes, beauty & more — just for you.</p>
+
+    <!-- Clickable Fashion Image -->
+    <a href="https://your-link.com">
+      <img src="image1.png" alt="Fashion Image">
+    </a>
   </div>
 
   <footer>
