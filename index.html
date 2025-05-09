@@ -3,162 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AllaboutFashion</title>
+  <title>Met Gala Fashion - AllaboutFashion</title>
   <style>
-    /* General Body and Font Styles */
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #F5F5F5;
+      background-color: #f5f5f5;
       color: #333;
     }
+
     header {
       background-color: #2c3e50;
       color: #fff;
-      padding: 20px 40px;
       text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      font-style: italic;
-    }
-    
-    /* Navigation Menu Styles */
-    nav {
-      background-color: #34495e;
-      padding: 10px 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #fff;
-      font-size: 1.1rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav ul li a:hover {
-      color: #ecf0f1;
+      padding: 20px 0;
     }
 
-    /* Main Content Section */
-    section {
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .content {
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
-    .section-header {
-      text-align: center;
+
+    .article-card {
+      display: flex;
       margin-bottom: 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
     }
-    .section-header h2 {
-      font-size: 2.5rem;
+
+    .article-card img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .article-card-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .article-card h3 {
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: bold;
       color: #2c3e50;
-      font-weight: 700;
-    }
-    .video-embed {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    
-    .card {
-      background: #fff;
-      padding: 30px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .subscribe-section {
-      background-color: #e74c3c;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+    .article-card p {
+      color: #7f8c8d;
+      font-size: 1rem;
+      margin-top: 10px;
     }
-    .subscribe-section h3 {
-      font-size: 2rem;
-    }
-    .subscribe-section a {
-      font-size: 1.5rem;
-      color: white;
-      background-color: #16a085;
-      padding: 10px 30px;
+
+    .article-card a {
       text-decoration: none;
-      border-radius: 5px;
+      color: #e74c3c;
+      font-weight: bold;
+      margin-top: 15px;
+      display: inline-block;
     }
 
+    .article-card a:hover {
+      text-decoration: underline;
+    }
+
+    .article-card-time {
+      font-size: 0.9rem;
+      color: #95a5a6;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 
 <body>
-
-  <!-- Header -->
   <header>
     <h1>AllaboutFashion</h1>
-    <p>Your daily dose of style, trends, tips, and timeless looks</p>
+    <p>Your daily dose of fashion, beauty, and celebrity style</p>
   </header>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#">Fashion</a></li>
-      <li><a href="#">Beauty</a></li>
-      <li><a href="#">Culture</a></li>
-      <li><a href="#">Living</a></li>
-      <li><a href="#">Weddings</a></li>
-      <li><a href="#">Runway</a></li>
-      <li><a href="#">Shopping</a></li>
-      <li><a href="#">Video</a></li>
-    </ul>
-  </nav>
+  <div class="content">
+    <h2>Met Gala Fashion</h2>
 
-  <!-- Main Content Section -->
-  <section>
-    <div class="section-header">
-      <h2>Featured TikTok Fashion Videos</h2>
-    </div>
-    
-    <div class="card">
-      <h3>Trending Fashion Look</h3>
-      <div class="video-embed">
-        <!-- Embed a TikTok video -->
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@allaboutfashion29/video/7499275769248763182?is_from_webapp=1&sender_device=pc&web_id=7502312181749270058">
-          <section>Watch on TikTok</section>
-        </blockquote>
+    <!-- First Article -->
+    <div class="article-card">
+      <img src="https://via.placeholder.com/300" alt="Lewis Hamilton's Met Gala Look">
+      <div class="article-card-content">
+        <h3>Lewis Hamilton’s 2025 Met Gala Look Is Loaded With Symbolism—Right Down to the Cuff Links</h3>
+        <p>By Hannah Jackson</p>
+        <p>Discover the meaning behind Lewis Hamilton’s bold Met Gala 2025 look, full of deep symbolism that speaks to his personal style.</p>
+        <a href="https://example.com/met-gala-lewis-hamilton">Read More</a>
+        <p class="article-card-time">Published: May 8, 2025</p>
       </div>
     </div>
 
-    <div class="card">
-      <h3>Vibrant Summer Styles</h3>
-      <div class="video-embed">
-        <!-- Embed another TikTok video -->
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@beautyqueen/video/987654321" data-video-id="987654321">
-          <section>Watch on TikTok</section>
-        </blockquote>
+    <!-- Second Article -->
+    <div class="article-card">
+      <img src="https://via.placeholder.com/300" alt="A$AP Rocky Met Gala">
+      <div class="article-card-content">
+        <h3>Like a True Dandy, A$AP Rocky Wore His Own Design to the 2025 Met Gala—Inspired by Harlem</h3>
+        <p>By Christian Allaire</p>
+        <p>A$AP Rocky’s stunning Met Gala look drew inspiration from Harlem, mixing bold designs and cultural significance. Find out more about his red carpet moment.</p>
+        <a href="https://example.com/met-gala-asap-rocky">Read More</a>
+        <p class="article-card-time">Published: May 8, 2025</p>
       </div>
     </div>
 
-  </section>
+    <!-- Third Article -->
+    <div class="article-card">
+      <img src="https://via.placeholder.com/300" alt="Suited Up Met Gala">
+      <div class="article-card-content">
+        <h3>Suited Up! These Are the Stars That Nailed the 2025 Met Gala Theme “Tailored for You”</h3>
+        <p>By José Criales-Unzueta</p>
+        <p>From classic tuxedos to modern suits, check out the celebrities who perfectly embraced the “Tailored for You” Met Gala theme.</p>
+        <a href="https://example.com/met-gala-suited-up">Read More</a>
+        <p class="article-card-time">Published: May 8, 2025</p>
+      </div>
+    </div>
 
-  <!-- Subscription Section -->
-  <div class="subscribe-section">
-    <h3>Never Miss a Fashion Moment</h3>
-    <p>Get unlimited access to the latest fashion, beauty, and culture updates directly in your inbox.</p>
-    <a href="#">Subscribe Now</a>
+    <!-- Fourth Article -->
+    <div class="article-card">
+      <img src="https://via.placeholder.com/300" alt="Athletes Met Gala 2025">
+      <div class="article-card-content">
+        <h3>Joe Burrow! Simone Biles! Serena Williams! See All the Athletes in Attendance at the 2025 Met Gala</h3>
+        <p>By José Criales-Unzueta</p>
+        <p>Find out which famous athletes made their mark at the 2025 Met Gala, bringing style and elegance to the red carpet.</p>
+        <a href="https://example.com/met-gala-athletes">Read More</a>
+        <p class="article-card-time">Published: May 8, 2025</p>
+      </div>
+    </div>
   </div>
 
+  <footer class="footer">
+    <p>&copy; 2025 AllaboutFashion | Subscribe to our newsletter for the latest updates</p>
+  </footer>
 </body>
 </html>
