@@ -88,18 +88,10 @@
       text-align: center;
     }
 
-    footer {
-      margin-top: 4rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      padding-bottom: 1rem;
-    }
-
-    /* Image gallery */
+    /* Gallery */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
       max-width: 1000px;
       margin: 0 auto;
@@ -111,19 +103,24 @@
       height: auto;
       border-radius: 8px;
       transition: transform 0.3s;
+      object-fit: cover;
     }
 
     .gallery img:hover {
       transform: scale(1.05);
     }
 
-    /* Links */
     .gallery a {
       display: block;
-      width: 100%;
-      height: 100%;
     }
 
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      padding-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -159,11 +156,11 @@
 
   <div class="gallery">
     <a href="#"><img src="image4.png" alt="Fashion 4"></a>
-    <a href="#"><img src="image5.png" alt="Fashion 5"></a>
+    <a href="#"><img src="image2.png" alt="Fashion 2"></a>
     <a href="#"><img src="image6.png" alt="Fashion 6"></a>
     <a href="#"><img src="image1.png" alt="Fashion 1"></a>
-    <a href="#"><img src="image2.png" alt="Fashion 2"></a>
     <a href="#"><img src="image3.png" alt="Fashion 3"></a>
+    <a href="#"><img src="image5.png" alt="Fashion 5"></a>
   </div>
 
   <footer>
@@ -171,3 +168,4 @@
   </footer>
 </body>
 </html>
+
