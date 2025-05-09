@@ -12,6 +12,7 @@
       color: #333;
     }
 
+    /* Top bar */
     .topbar {
       display: flex;
       justify-content: space-between;
@@ -55,6 +56,7 @@
       border-bottom: 2px solid #ff69b4;
     }
 
+    /* Category Bar */
     .category-bar {
       background-color: #f8f8f8;
       display: flex;
@@ -78,34 +80,12 @@
       color: #fff;
     }
 
+    /* Content */
     .content {
       max-width: 1000px;
       margin: 2rem auto;
       padding: 1rem;
       text-align: center;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .gallery a {
-      display: block;
-      margin: 0;
-      padding: 0;
-      border: none;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0;
-      padding: 0;
-      border: none;
     }
 
     footer {
@@ -115,6 +95,34 @@
       color: #aaa;
       padding-bottom: 1rem;
     }
+
+    /* Image gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Links */
+    .gallery a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
   </style>
 </head>
 <body>
@@ -125,6 +133,7 @@
     </div>
     <div class="menu">
       <span class="active">WOMEN</span>
+      <span style="opacity: 0.4;">MEN</span>
     </div>
   </div>
 
@@ -148,12 +157,12 @@
   </div>
 
   <div class="gallery">
-    <a href="#"><img src="image1.png" alt="Fashion 1"></a>
-    <a href="#"><img src="image2.png" alt="Fashion 2"></a>
     <a href="#"><img src="image3.png" alt="Fashion 3"></a>
     <a href="#"><img src="image4.png" alt="Fashion 4"></a>
     <a href="#"><img src="image5.png" alt="Fashion 5"></a>
     <a href="#"><img src="image6.png" alt="Fashion 6"></a>
+    <a href="#"><img src="image1.png" alt="Fashion 1"></a>
+    <a href="#"><img src="image2.png" alt="Fashion 2"></a>
   </div>
 
   <footer>
