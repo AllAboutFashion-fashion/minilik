@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
+      background-color: #fff0f5; /* Light pink */
       color: #333;
     }
 
@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #000;
+      background-color: #ff69b4; /* Vibrant pink */
       padding: 10px 20px;
       color: #fff;
     }
@@ -25,7 +25,6 @@
     .topbar .brand {
       font-size: 1.8rem;
       font-weight: bold;
-      color: #ff69b4;
     }
 
     .topbar .search {
@@ -47,18 +46,9 @@
       font-size: 1rem;
     }
 
-    .topbar .menu span {
-      cursor: pointer;
-      padding: 5px 10px;
-    }
-
-    .topbar .menu span.active {
-      border-bottom: 2px solid #ff69b4;
-    }
-
     /* Category Bar */
     .category-bar {
-      background-color: #f8f8f8;
+      background-color: #ffe4ec;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -67,12 +57,13 @@
     }
 
     .category-bar span {
-      color: #000;
+      color: #ff1493;
       cursor: pointer;
       font-size: 0.95rem;
       padding: 5px 10px;
       border-radius: 20px;
       transition: background 0.3s;
+      font-weight: bold;
     }
 
     .category-bar span:hover {
@@ -88,6 +79,10 @@
       text-align: center;
     }
 
+    .content h2 {
+      color: #ff1493;
+    }
+
     footer {
       margin-top: 4rem;
       text-align: center;
@@ -101,11 +96,7 @@
   <div class="topbar">
     <div class="brand">AllAboutFashion</div>
     <div class="search">
-      <input type="text" placeholder="Search for items and brands" />
-    </div>
-    <div class="menu">
-      <span class="active">WOMEN</span>
-      <span style="opacity: 0.4;">MEN</span>
+      <input type="text" placeholder="Search for women’s styles and brands" />
     </div>
   </div>
 
@@ -124,12 +115,12 @@
   </div>
 
   <div class="content">
-    <h2>Welcome to your ultimate fashion destination!</h2>
-    <p>Find all the latest trends in clothing, shoes, beauty & more — just for you.</p>
+    <h2>Welcome to your dream closet 💖</h2>
+    <p>Explore the freshest women's fashion — from trendy dresses to must-have skincare, hair care, and more!</p>
   </div>
 
   <footer>
-    &copy; 2025 AllAboutFashion. All rights reserved.
+    &copy; 2025 AllAboutFashion. Made with 💕 for stylish women.
   </footer>
 </body>
 </html>
