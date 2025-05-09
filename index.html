@@ -7,45 +7,28 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #F9F9F9; /* Soft light grey background */
+      background-color: #F9F9F9;
       color: #333;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #FADADD; /* Soft blush pink */
+      background-color: #FADADD;
       padding: 40px 20px;
       text-align: center;
-      border-bottom: 4px solid #9B7F9F; /* Rich mauve purple border */
+      border-bottom: 4px solid #9B7F9F;
     }
     header h1 {
       margin: 0;
       font-size: 3rem;
-      color: #9B7F9F; /* Rich mauve purple */
+      color: #9B7F9F;
       font-weight: bold;
     }
     header p {
       font-size: 1.5rem;
-      color: #9B7F9F; /* Rich mauve purple */
+      color: #9B7F9F;
       margin-top: 10px;
       font-style: italic;
-    }
-    nav {
-      background-color: #9B7F9F; /* Rich mauve purple */
-      padding: 12px;
-      text-align: center;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    nav a {
-      margin: 0 30px;
-      text-decoration: none;
-      color: #FFFFFF; /* White text */
-      font-weight: bold;
-      font-size: 1.2rem;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #FADADD; /* Soft blush pink hover effect */
     }
     section {
       padding: 50px 20px;
@@ -54,30 +37,18 @@
       color: #333;
     }
     h2 {
-      color: #9B7F9F; /* Rich mauve purple */
+      color: #9B7F9F;
       text-align: center;
       font-size: 2rem;
       margin-bottom: 20px;
       font-weight: bold;
     }
     .card {
-      background: #FFFFFF; /* White */
+      background: #FFFFFF;
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
       margin: 20px 0;
       padding: 30px;
       border-radius: 12px;
-      border: 1px solid #9B7F9F; /* Mauve purple border */
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background-color: #9B7F9F; /* Rich mauve purple */
-      text-align: center;
-      padding: 20px;
-      color: #FFFFFF;
-      border-top: 4px solid #FADADD; /* Soft blush pink border */
     }
   </style>
 </head>
@@ -87,43 +58,85 @@
     <p>Your daily dose of style — trends, tips, and timeless looks to inspire your wardrobe</p>
   </header>
 
-  <nav>
-    <a href="#clothing">Clothing</a>
-    <a href="#skincare">Skincare</a>
-    <a href="#hair">Hair</a>
-    <a href="#accessories">Accessories</a>
-  </nav>
-
-  <section id="clothing">
-    <h2>Clothing</h2>
+  <section id="tiktok">
+    <h2>TikTok Fashion</h2>
     <div class="card">
-      <p><strong>Discover the latest in casual, chic, and formal wear. Stay ahead of trends with our curated outfits.</strong></p>
+      <p><em>Check out this trending TikTok video below:</em></p>
+      <blockquote class="tiktok-embed" cite="<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AllaboutFashion</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #F9F9F9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #FADADD;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 4px solid #9B7F9F;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #9B7F9F;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: #9B7F9F;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      color: #333;
+    }
+    h2 {
+      color: #9B7F9F;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .card {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+      padding: 30px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AllaboutFashion</h1>
+    <p>Your daily dose of style — trends, tips, and timeless looks to inspire your wardrobe</p>
+  </header>
+
+  <section id="tiktok">
+    <h2>TikTok Fashion</h2>
+    <div class="card">
+      <p><em>Check out this trending TikTok video below:</em></p>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@fashionista/video/123456789" data-video-id="123456789">
+        <section>Watch on TikTok</section>
+      </blockquote>
     </div>
   </section>
-
-  <section id="skincare">
-    <h2>Skincare</h2>
-    <div class="card">
-      <p><em>From glow routines to deep hydration—explore skincare tips and product reviews you can trust.</em></p>
+</body>
+</html>
+">
+        <section>Watch on TikTok</section>
+      </blockquote>
     </div>
   </section>
-
-  <section id="hair">
-    <h2>Hair</h2>
-    <div class="card">
-      <p><strong>Explore hairstyles, care routines, and must-have tools for curls, waves, braids, and more.</strong></p>
-    </div>
-  </section>
-
-  <section id="accessories">
-    <h2>Accessories</h2>
-    <div class="card">
-      <p><em>Style it up with trending accessories—bags, earrings, sunglasses, and more to complete your look.</em></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 AllaboutFashion. All rights reserved.</p>
-  </footer>
 </body>
 </html>
