@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fashion & Beauty</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Fashion - Shop the Latest Trends</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      background-color: #f8f8f8;
       color: #333;
     }
 
     header {
-      background-color: #222;
+      background-color: #000;
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -23,92 +23,135 @@
     header h1 {
       font-size: 3rem;
       margin: 0;
-      color: #e91e63;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #dcb2db;
+      color: #e91e63;
     }
 
     .nav {
       display: flex;
       justify-content: center;
-      background-color: #000;
-      padding: 15px 0;
+      background-color: #fff;
+      padding: 10px 0;
+      border-bottom: 2px solid #e1e1e1;
     }
 
     .nav a {
-      color: #fff;
+      color: #333;
       text-decoration: none;
-      padding: 12px 25px;
+      padding: 15px 25px;
       font-size: 1.1rem;
-      text-transform: uppercase;
-      font-weight: bold;
     }
 
     .nav a:hover {
       background-color: #e91e63;
+      color: #fff;
     }
 
-    .content {
+    .banner {
+      background-image: url('https://via.placeholder.com/1500x600');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .banner h2 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .banner p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+
+    .category {
+      width: 30%;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .category img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .category h3 {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+
+    .category a {
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .category a:hover {
+      text-decoration: underline;
+    }
+
+    .featured-products {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
+      padding: 40px 20px;
     }
 
-    .article-card {
+    .product-card {
       background-color: #fff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 15px;
-      overflow: hidden;
-      width: 300px;
-      margin: 15px;
+      width: 30%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
       transition: transform 0.3s ease-in-out;
     }
 
-    .article-card:hover {
+    .product-card:hover {
       transform: scale(1.05);
     }
 
-    .article-card img {
+    .product-card img {
       width: 100%;
-      height: 200px;
+      height: 300px;
       object-fit: cover;
-      border-bottom: 3px solid #e91e63;
+      border-radius: 5px;
     }
 
-    .article-card-content {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .article-card h3 {
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: #e91e63;
+    .product-card h4 {
+      font-size: 1.2rem;
       margin: 10px 0;
+      color: #333;
     }
 
-    .article-card p {
-      font-size: 1rem;
-      color: #7f8c8d;
-      line-height: 1.5;
+    .product-card p {
+      color: #999;
     }
 
-    .article-card a {
+    .product-card .price {
+      font-size: 1.5rem;
       color: #e91e63;
-      text-decoration: none;
       font-weight: bold;
-      display: inline-block;
-      margin-top: 15px;
-    }
-
-    .article-card a:hover {
-      text-decoration: underline;
     }
 
     footer {
@@ -116,6 +159,10 @@
       color: #fff;
       text-align: center;
       padding: 20px 0;
+    }
+
+    footer p {
+      margin: 0;
       font-size: 1rem;
     }
 
@@ -127,59 +174,72 @@
     footer a:hover {
       text-decoration: underline;
     }
-
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Fashion & Beauty</h1>
-    <p>Empower Your Inner Diva with Trendy Styles</p>
-  </header>
 
-  <nav class="nav">
-    <a href="#">Home</a>
-    <a href="#">Fashion</a>
-    <a href="#">Beauty</a>
-    <a href="#">Culture</a>
-    <a href="#">Living</a>
-    <a href="#">Shopping</a>
-    <a href="#">Videos</a>
-  </nav>
+<header>
+  <h1>Women's Fashion</h1>
+  <p>Trendy Styles & Timeless Classics</p>
+</header>
 
-  <div class="content">
-    <div class="article-card">
-      <img src="https://via.placeholder.com/300x200" alt="Fashion Image 1">
-      <div class="article-card-content">
-        <h3><a href="#">Bold Fashion at the Met Gala</a></h3>
-        <p>Explore the stunning Met Gala looks and find out what makes them so iconic this year!</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
+<nav class="nav">
+  <a href="#">Home</a>
+  <a href="#">Clothing</a>
+  <a href="#">Shoes</a>
+  <a href="#">Accessories</a>
+  <a href="#">Sale</a>
+  <a href="#">New Arrivals</a>
+</nav>
 
-    <div class="article-card">
-      <img src="https://via.placeholder.com/300x200" alt="Fashion Image 2">
-      <div class="article-card-content">
-        <h3><a href="#">Street Style Trends</a></h3>
-        <p>From the streets to the runway, learn how to rock the latest street style trends.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
+<div class="banner">
+  <h2>Shop the Latest Women's Fashion</h2>
+  <p>Find your new favorite looks right here!</p>
+</div>
 
-    <div class="article-card">
-      <img src="https://via.placeholder.com/300x200" alt="Fashion Image 3">
-      <div class="article-card-content">
-        <h3><a href="#">Celebrity Looks to Copy</a></h3>
-        <p>Check out these celebrity-inspired outfits and how to recreate them for yourself.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
+<div class="categories">
+  <div class="category">
+    <img src="https://via.placeholder.com/400x250" alt="Clothing">
+    <h3>Clothing</h3>
+    <a href="#">Shop Now</a>
   </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/400x250" alt="Shoes">
+    <h3>Shoes</h3>
+    <a href="#">Shop Now</a>
+  </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/400x250" alt="Accessories">
+    <h3>Accessories</h3>
+    <a href="#">Shop Now</a>
+  </div>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Fashion & Beauty. All rights reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-  </footer>
+<div class="featured-products">
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x300" alt="Product 1">
+    <h4>Floral Dress</h4>
+    <p>Perfect for summer</p>
+    <p class="price">$49.99</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x300" alt="Product 2">
+    <h4>Red Heels</h4>
+    <p>Stylish & Comfortable</p>
+    <p class="price">$79.99</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x300" alt="Product 3">
+    <h4>Gold Necklace</h4>
+    <p>Elegant & Chic</p>
+    <p class="price">$29.99</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Women's Fashion. All rights reserved.</p>
+  <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
 
 </body>
 </html>
