@@ -12,43 +12,79 @@
       color: #fff;
     }
 
-    header {
-      background-color: #ff66b2;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 2.2rem;
+    /* Top bar */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      padding: 10px 20px;
+      color: #fff;
+    }
+
+    .topbar .brand {
+      font-size: 1.8rem;
       font-weight: bold;
+      color: #ff69b4;
     }
 
-    .slogan {
-      font-style: italic;
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: #ffe6f0;
+    .topbar .search {
+      flex: 1;
+      margin: 0 20px;
     }
 
-    .content {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-      text-align: center;
-    }
-
-    .cta {
-      background-color: #ff4da6;
-      color: white;
-      padding: 0.8rem 2rem;
+    .topbar input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 20px;
       border: none;
-      border-radius: 25px;
       font-size: 1rem;
-      cursor: pointer;
-      margin-top: 1rem;
-      transition: background-color 0.3s;
     }
 
-    .cta:hover {
-      background-color: #ff3399;
+    .topbar .menu {
+      display: flex;
+      gap: 15px;
+      font-size: 1rem;
+    }
+
+    .topbar .menu span {
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .topbar .menu span.active {
+      border-bottom: 2px solid #ff69b4;
+    }
+
+    /* Category Bar */
+    .category-bar {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      gap: 15px;
+    }
+
+    .category-bar span {
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.95rem;
+      padding: 5px 10px;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+
+    .category-bar span:hover {
+      background-color: #ff69b4;
+    }
+
+    /* Content */
+    .content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
     }
 
     footer {
@@ -61,18 +97,34 @@
   </style>
 </head>
 <body>
-  <header>
-    AllAboutFashion
-    <div class="slogan">Style. Glow. Confidence.</div>
-  </header>
+  <div class="topbar">
+    <div class="brand">AllAboutFashion</div>
+    <div class="search">
+      <input type="text" placeholder="Search for items and brands" />
+    </div>
+    <div class="menu">
+      <span class="active">WOMEN</span>
+      <span style="opacity: 0.4;">MEN</span>
+    </div>
+  </div>
+
+  <div class="category-bar">
+    <span>Trending</span>
+    <span>New In</span>
+    <span>Clothing</span>
+    <span>Dresses</span>
+    <span>Shoes</span>
+    <span>Plus Size</span>
+    <span>Activewear</span>
+    <span>Accessories</span>
+    <span>Brands</span>
+    <span>Wedding Shop</span>
+    <span>Sale</span>
+  </div>
 
   <div class="content">
-    <h2>Welcome to your daily source of fashion inspiration!</h2>
-    <p>
-      Discover the best in women's fashion — from skincare secrets and hair hacks to chic outfit ideas and timeless beauty. 
-      Whether you're looking for glam or casual, we've got you covered.
-    </p>
-    <button class="cta">Explore More</button>
+    <h2>Welcome to your ultimate fashion destination!</h2>
+    <p>Find all the latest trends in clothing, shoes, beauty & more — just for you.</p>
   </div>
 
   <footer>
