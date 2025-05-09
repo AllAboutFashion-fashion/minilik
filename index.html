@@ -2,92 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FashionWorld</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionHub</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6f0; /* soft beige */
+      color: #333;
       margin: 0;
       padding: 0;
-      background: #fefefe;
-      color: #333;
     }
     header {
-      background: #000;
-      color: #fff;
+      background-color: #e4c2b3; /* muted blush */
       padding: 20px;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
     nav {
-      background: #f4f4f4;
+      background-color: #fff3e9;
       padding: 10px;
       text-align: center;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
-    }
-    .hero {
-      background-image: url('https://source.unsplash.com/featured/?fashion');
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 2em;
+      color: #7a5c58;
       font-weight: bold;
-      text-shadow: 2px 2px #000;
     }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
+    h2 {
+      color: #7a5c58;
+    }
+    .card {
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 12px;
+    }
     footer {
-      background: #000;
-      color: #fff;
+      background-color: #e4c2b3;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>FashionWorld</h1>
-    <p>Your source for the latest in global fashion</p>
+    <h1>FashionHub</h1>
+    <p>Your go-to source for clothing, skincare, hair & more.</p>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Trends</a>
-    <a href="#">Gallery</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
+    <a href="#clothing">Clothing</a>
+    <a href="#skincare">Skincare</a>
+    <a href="#hair">Hair</a>
+    <a href="#accessories">Accessories</a>
   </nav>
 
-  <div class="hero">
-    Discover Your Style
-  </div>
-
-  <section>
-    <h2>About Us</h2>
-    <p>FashionWorld is your go-to destination for the hottest fashion trends, styling tips, and inspiration. We feature global fashion insights from runways, street style, and celebrity looks.</p>
+  <section id="clothing">
+    <h2>Clothing</h2>
+    <div class="card">
+      <p>Discover the latest trends in casual, streetwear, and formal fashion. From timeless pieces to bold new styles.</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Latest Trends</h2>
-    <p>Stay ahead of the curve with our hand-picked selection of fashion-forward looks. From casual streetwear to luxury runway pieces, we cover it all.</p>
+  <section id="skincare">
+    <h2>Skincare</h2>
+    <div class="card">
+      <p>Explore trusted skincare products, routines, and tips that help you maintain glowing, healthy skin.</p>
+    </div>
+  </section>
+
+  <section id="hair">
+    <h2>Hair</h2>
+    <div class="card">
+      <p>Top styles, haircare routines, and tools that keep your hair looking its best—curly, straight, or protective styles.</p>
+    </div>
+  </section>
+
+  <section id="accessories">
+    <h2>Accessories</h2>
+    <div class="card">
+      <p>Complete your look with trending bags, jewelry, and other must-have fashion accessories.</p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 FashionWorld. All rights reserved.
+    <p>&copy; 2025 FashionHub. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
 
