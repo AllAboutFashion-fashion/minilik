@@ -9,12 +9,12 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fef4f9; /* Light pink background */
+      background-color: #fff;
       color: #333;
     }
 
     header {
-      background-color: #222; /* Dark background for header */
+      background-color: #222;
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -22,14 +22,13 @@
 
     header h1 {
       font-size: 3rem;
-      font-family: 'Georgia', serif;
       margin: 0;
-      color: #e91e63; /* Soft pink color */
+      color: #e91e63;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #dcb2db; /* Light purple color */
+      color: #dcb2db;
     }
 
     .nav {
@@ -49,14 +48,13 @@
     }
 
     .nav a:hover {
-      background-color: #e91e63; /* Soft pink on hover */
-      color: #fff;
+      background-color: #e91e63;
     }
 
     .content {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
@@ -80,7 +78,7 @@
       width: 100%;
       height: 200px;
       object-fit: cover;
-      border-bottom: 3px solid #e91e63; /* Pink border for images */
+      border-bottom: 3px solid #e91e63;
     }
 
     .article-card-content {
@@ -91,7 +89,7 @@
     .article-card h3 {
       font-size: 1.6rem;
       font-weight: bold;
-      color: #e91e63; /* Soft pink for titles */
+      color: #e91e63;
       margin: 10px 0;
     }
 
@@ -151,27 +149,30 @@
 
   <div class="content">
     <div class="article-card">
-      <a href="#">
-        <img src="https://via.placeholder.com/600x400" alt="Summer Fashion Trends" />
-        <div class="article-card-content">
-          <h3>Top Summer Fashion Trends to Follow</h3>
-          <p>By Olivia Rose</p>
-          <p>Stay ahead of the curve this summer with our guide to the best summer fashion trends!</p>
-          <a href="#">Read More</a>
-        </div>
-      </a>
+      <img src="https://via.placeholder.com/300x200" alt="Fashion Image 1">
+      <div class="article-card-content">
+        <h3><a href="#">Bold Fashion at the Met Gala</a></h3>
+        <p>Explore the stunning Met Gala looks and find out what makes them so iconic this year!</p>
+        <a href="#">Read More</a>
+      </div>
     </div>
 
     <div class="article-card">
-      <a href="#">
-        <img src="https://via.placeholder.com/600x400" alt="Celebrity Hairstyles" />
-        <div class="article-card-content">
-          <h3>Celebrity Hairstyles You Can Recreate</h3>
-          <p>By Lucy Bell</p>
-          <p>Get the celebrity-inspired look with these easy-to-follow hairstyle tutorials!</p>
-          <a href="#">Read More</a>
-        </div>
-      </a>
+      <img src="https://via.placeholder.com/300x200" alt="Fashion Image 2">
+      <div class="article-card-content">
+        <h3><a href="#">Street Style Trends</a></h3>
+        <p>From the streets to the runway, learn how to rock the latest street style trends.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <img src="https://via.placeholder.com/300x200" alt="Fashion Image 3">
+      <div class="article-card-content">
+        <h3><a href="#">Celebrity Looks to Copy</a></h3>
+        <p>Check out these celebrity-inspired outfits and how to recreate them for yourself.</p>
+        <a href="#">Read More</a>
+      </div>
     </div>
   </div>
 
