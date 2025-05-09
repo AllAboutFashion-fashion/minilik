@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fashion by Lucy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FashionWorld</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background: #fefefe;
+      color: #333;
     }
     header {
-      background-color: #222;
-      color: white;
+      background: #000;
+      color: #fff;
       padding: 20px;
+      text-align: center;
     }
-    h1 {
-      margin: 0;
+    nav {
+      background: #f4f4f4;
+      padding: 10px;
+      text-align: center;
     }
-    .content {
-      padding: 40px;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+    }
+    .hero {
+      background-image: url('https://source.unsplash.com/featured/?fashion');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px #000;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     footer {
-      background-color: #eee;
-      padding: 10px;
-      margin-top: 20px;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to My Fashion World</h1>
+    <h1>FashionWorld</h1>
+    <p>Your source for the latest in global fashion</p>
   </header>
-  <div class="content">
-    <h2>Explore the latest trends in Ethiopian fashion.</h2>
-    <p>Coming soon: styles, tips, and more!</p>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Trends</a>
+    <a href="#">Gallery</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Discover Your Style
   </div>
+
+  <section>
+    <h2>About Us</h2>
+    <p>FashionWorld is your go-to destination for the hottest fashion trends, styling tips, and inspiration. We feature global fashion insights from runways, street style, and celebrity looks.</p>
+  </section>
+
+  <section>
+    <h2>Latest Trends</h2>
+    <p>Stay ahead of the curve with our hand-picked selection of fashion-forward looks. From casual streetwear to luxury runway pieces, we cover it all.</p>
+  </section>
+
   <footer>
-    &copy; 2025 Fashion by Lucy
+    &copy; 2025 FashionWorld. All rights reserved.
   </footer>
+
 </body>
 </html>
+
