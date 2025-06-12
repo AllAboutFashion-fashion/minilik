@@ -7,116 +7,98 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.5;
+      color: #000;
     }
-    header, nav, main, footer {
-      margin-bottom: 20px;
-    }
-    header h1 {
+    h1 {
       font-size: 2em;
-      margin-bottom: 0;
+      margin-bottom: 0.2em;
     }
-    header p {
-      margin-top: 0.2em;
-      font-style: italic;
-      color: #555;
+    p, ul {
+      margin-top: 0;
+      margin-bottom: 1em;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin: 10px 0;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
-    nav ul li {
-      display: inline;
+    ul li {
+      margin-bottom: 0.3em;
+      font-weight: 600;
     }
-    nav a {
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
       text-decoration: none;
-      color: #0077cc;
+      border-radius: 5px;
       font-weight: bold;
+      margin-bottom: 2em;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section.welcome {
-      background-color: #f9f9f9;
-      padding: 15px;
-      border-radius: 6px;
-      margin-bottom: 25px;
-    }
-    .fashion-gallery {
+    .fashion-list {
       display: flex;
-      gap: 15px;
+      gap: 10px;
       flex-wrap: wrap;
-      justify-content: center;
+      margin-bottom: 2em;
     }
     .fashion-item {
-      flex: 1 1 150px;
       background-color: #eee;
-      padding: 20px;
-      text-align: center;
+      padding: 15px 20px;
       border-radius: 6px;
-      font-weight: bold;
+      font-weight: 700;
+      flex: 1 1 30%;
+      text-align: center;
     }
     footer {
-      text-align: center;
       font-size: 0.9em;
-      color: #777;
+      color: #555;
       border-top: 1px solid #ccc;
       padding-top: 15px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-<header>
   <h1>AllAbouttFashion</h1>
-  <p>TikTok <a href="https://www.tiktok.com/@allaboutfashion29" target="_blank">@allaboutfashion29</a></p>
-</header>
+  <p>Search for items and brands</p>
 
-<section class="welcome">
-  <p>Welcome to your ultimate fashion destination!</p>
-  <p>Find all the latest trends in clothing, shoes, beauty &amp; more — just for you.</p>
-</section>
-
-<nav>
   <ul>
-    <li><a href="#">WOMEN</a></li>
-    <li><a href="#">Trending</a></li>
-    <li><a href="#">New In</a></li>
-    <li><a href="#">Clothing</a></li>
-    <li><a href="#">Dresses</a></li>
-    <li><a href="#">Shoes</a></li>
-    <li><a href="#">Plus Size</a></li>
-    <li><a href="#">Activewear</a></li>
-    <li><a href="#">Accessories</a></li>
-    <li><a href="#">Brands</a></li>
-    <li><a href="#">Wedding Shop</a></li>
-    <li><a href="#">Sale</a></li>
+    <li>WOMEN</li>
+    <li>Trending</li>
+    <li>New In</li>
+    <li>Clothing</li>
+    <li>Dresses</li>
+    <li>Shoes</li>
+    <li>Plus Size</li>
+    <li>Activewear</li>
+    <li>Accessories</li>
+    <li>Brands</li>
+    <li>Wedding Shop</li>
+    <li>Sale</li>
   </ul>
-</nav>
 
-<section class="welcome">
-  <p>Welcome to your ultimate fashion destination!</p>
-  <p>Find all the latest trends in clothing, shoes, beauty &amp; more — just for you.</p>
-</section>
+  <a href="#" class="button-link">Shop Now</a>
 
-<section class="fashion-gallery">
-  <div class="fashion-item">Fashion 4</div>
-  <div class="fashion-item">Fashion 2</div>
-  <div class="fashion-item">Fashion 5</div>
-  <div class="fashion-item">Fashion 1</div>
-  <div class="fashion-item">Fashion 3</div>
-  <div class="fashion-item">Fashion 6</div>
-</section>
+  <p>Welcome to your ultimate fashion destination!<br>
+  Find all the latest trends in clothing, shoes, beauty &amp; more — just for you.</p>
 
-<footer>
-  <p>@allaboutfashion29</p>
-  <p>© 2025 AllAbouttFashion. All rights reserved.</p>
-</footer>
+  <div class="fashion-list">
+    <div class="fashion-item">Fashion 4</div>
+    <div class="fashion-item">Fashion 2</div>
+    <div class="fashion-item">Fashion 5</div>
+    <div class="fashion-item">Fashion 1</div>
+    <div class="fashion-item">Fashion 3</div>
+    <div class="fashion-item">Fashion 6</div>
+  </div>
+
+  <footer>
+    © 2025 AllAbouttFashion. All rights reserved.
+  </footer>
 
 </body>
 </html>
