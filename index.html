@@ -4,19 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AllAbouttFashion</title>
-  <div class="topbar">
-  <div class="brand">
-    AllAbouttFashion
-    <a href="#" class="link-button">Link</a>
-  </div>
-  <div class="search">
-    <input type="text" placeholder="Search for items and brands" />
-  </div>
-  <div class="menu">
-    <span class="active">WOMEN</span>
-  </div>
-</div>
-
   <style>
     body {
       margin: 0;
@@ -38,6 +25,25 @@
       font-size: 1.8rem;
       font-weight: bold;
       color: #ff69b4;
+      display: flex;
+      align-items: center;
+    }
+
+    .link-button {
+      margin-left: 15px;
+      padding: 5px 12px;
+      background-color: #ff69b4;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      vertical-align: middle;
+      transition: background-color 0.3s;
+    }
+
+    .link-button:hover {
+      background-color: #e055a0;
     }
 
     .topbar .search {
@@ -134,7 +140,10 @@
 </head>
 <body>
   <div class="topbar">
-    <div class="brand">AllAbouttFashion</div>
+    <div class="brand">
+      AllAbouttFashion
+      <a href="#" class="link-button">Link</a>
+    </div>
     <div class="search">
       <input type="text" placeholder="Search for items and brands" />
     </div>
@@ -159,7 +168,7 @@
 
   <div class="content">
     <h2>Welcome to your ultimate fashion destination!</h2>
-    <p>Find all the latest trends in clothing, shoes, beauty & more — just for you.</p>
+    <p>Find all the latest trends in clothing, shoes, beauty &amp; more — just for you.</p>
   </div>
 
   <div class="gallery">
@@ -177,5 +186,10 @@
 </body>
 </html>
 
+    
 
+   
 
+   
+     
+   
