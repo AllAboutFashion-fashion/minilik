@@ -6,197 +6,114 @@
   <title>AllAbouttFashion</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
     }
-
-    /* Topbar styles */
-    .topbar {
+    header, nav, main, footer {
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+    header p {
+      margin-top: 0.2em;
+      font-style: italic;
+      color: #555;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #000;
-      padding: 10px 20px;
-      color: #fff;
-    }
-
-    .topbar .brand {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #ff69b4;
-    }
-
-    .topbar .search input[type="text"] {
-      width: 100%;
-      max-width: 300px;
-      padding: 8px 12px;
-      border-radius: 20px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    .topbar .menu {
-      display: flex;
-      gap: 15px;
-      font-size: 1rem;
-    }
-
-    .topbar .menu span {
-      cursor: pointer;
-      padding: 5px 10px;
-      color: #fff;
-    }
-
-    .topbar .menu span.active {
-      border-bottom: 2px solid #ff69b4;
-    }
-
-    /* Category bar */
-    .category-bar {
-      background-color: #f8f8f8;
-      display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      padding: 10px 0;
       gap: 15px;
+      margin: 10px 0;
     }
-
-    .category-bar span {
-      color: #000;
-      cursor: pointer;
-      font-size: 0.95rem;
-      padding: 5px 10px;
-      border-radius: 20px;
-      transition: background 0.3s;
+    nav ul li {
+      display: inline;
     }
-
-    .category-bar span:hover {
-      background-color: #ff69b4;
-      color: #fff;
+    nav a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
     }
-
-    /* Content */
-    .content {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 1rem;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section.welcome {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 25px;
+    }
+    .fashion-gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .fashion-item {
+      flex: 1 1 150px;
+      background-color: #eee;
+      padding: 20px;
       text-align: center;
+      border-radius: 6px;
+      font-weight: bold;
     }
-
-    /* Gallery */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-      max-width: 1000px;
-      margin: 0 auto 3rem;
-      padding: 0 10px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Footer */
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      padding: 1rem 0 2rem;
-      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #ccc;
+      padding-top: 15px;
     }
-
-    /* TikTok link styling (from your original header) */
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      font-size: 28px;
-      font-weight: bold;
-      margin: 20px;
-    }
-
-    .tiktok-link {
-      font-size: 16px;
-      background-color: #ff69b4;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-
-    .tiktok-link:hover {
-      background-color: #ff85c1;
-    }
-
   </style>
 </head>
 <body>
 
-  <!-- Header with TikTok link -->
-  <div class="header">
-    <div>AllAbouttFashion</div>
-    <a class="tiktok-link" href="https://www.tiktok.com/@allaboutfashion29?lang=en" target="_blank" rel="noopener noreferrer">
-      TikTok @allaboutfashion29
-    </a>
-  </div>
+<header>
+  <h1>AllAbouttFashion</h1>
+  <p>TikTok <a href="https://www.tiktok.com/@allaboutfashion29" target="_blank">@allaboutfashion29</a></p>
+</header>
 
-  <!-- Topbar -->
-  <div class="topbar">
-    <div class="brand">AllAbouttFashion</div>
-    <div class="search">
-      <input type="text" placeholder="Search for items and brands" />
-    </div>
-    <div class="menu">
-      <span class="active">WOMEN</span>
-    </div>
-  </div>
 
-  <!-- Category Bar -->
-  <div class="category-bar">
-    <span>Trending</span>
-    <span>New In</span>
-    <span>Clothing</span>
-    <span>Dresses</span>
-    <span>Shoes</span>
-    <span>Plus Size</span>
-    <span>Activewear</span>
-    <span>Accessories</span>
-    <span>Brands</span>
-    <span>Wedding Shop</span>
-    <span>Sale</span>
-  </div>
 
-  <!-- Welcome content -->
-  <div class="content">
-    <h2>Welcome to your ultimate fashion destination!</h2>
-    <p>Find all the latest trends in clothing, shoes, beauty &amp; more — just for you.</p>
-  </div>
+<nav>
+  <ul>
+    <li><a href="#">WOMEN</a></li>
+    <li><a href="#">Trending</a></li>
+    <li><a href="#">New In</a></li>
+    <li><a href="#">Clothing</a></li>
+    <li><a href="#">Dresses</a></li>
+    <li><a href="#">Shoes</a></li>
+    <li><a href="#">Plus Size</a></li>
+    <li><a href="#">Activewear</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#">Wedding Shop</a></li>
+    <li><a href="#">Sale</a></li>
+  </ul>
+</nav>
 
-  <!-- Gallery -->
-  <div class="gallery">
-    <a href="#"><img src="image4.png" alt="Fashion 4"></a>
-    <a href="#"><img src="image2.png" alt="Fashion 2"></a>
-    <a href="#"><img src="image5.png" alt="Fashion 5"></a>
-    <a href="#"><img src="image1.png" alt="Fashion 1"></a>
-    <a href="#"><img src="image3.png" alt="Fashion 3"></a>
-    <a href="#"><img src="image6.png" alt="Fashion 6"></a>
-  </div>
+<section class="welcome">
+  <p>Welcome to your ultimate fashion destination!</p>
+  <p>Find all the latest trends in clothing, shoes, beauty &amp; more — just for you.</p>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 AllAbouttFashion. All rights reserved.<br />
-    Follow us on <a href="https://www.tiktok.com/@allaboutfashion29?lang=en" target="_blank" rel="noopener noreferrer" style="color:#ff69b4; text-decoration:none;">TikTok @allaboutfashion29</a>
-  </footer>
+<section class="fashion-gallery">
+  <div class="fashion-item">Fashion 4</div>
+  <div class="fashion-item">Fashion 2</div>
+  <div class="fashion-item">Fashion 5</div>
+  <div class="fashion-item">Fashion 1</div>
+  <div class="fashion-item">Fashion 3</div>
+  <div class="fashion-item">Fashion 6</div>
+</section>
+
+<footer>
+  <p>@allaboutfashion29</p>
+  <p>© 2025 AllAbouttFashion. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
